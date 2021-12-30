@@ -3,8 +3,10 @@
   <id>io.github.Icalingua.Icalingua</id>
   
   <name>Icalingua</name>
-  <summary>A Linux client for QQ and more electron</summary>
-  <developer_name>laurent22</developer_name>
+  <name xml:lang="zh_CN">Icalingua</name>
+  <summary>A Linux client for QQ and more</summary>
+  <summary xml:lang="zh_CN">一款linux平台的QQ客户端</summary>
+  <developer_name>Clansty</developer_name>
 
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-only</project_license>
@@ -20,9 +22,11 @@
   <description>
     <p>
         A Linux client for QQ and more.
-    </p>
-    <p>
         This project hopes to create a conversation front-end framework for Linux and adapt to various chat platforms by implementing the Adapter back-end interface. Currently already has a backend based on oicq and Icalingua's own protocol. 
+    </p>
+    <p xml:lang="zh_CN">
+        一款linux平台的QQ客户端
+        本项目希望为 Linux 打造一个会话前端框架，通过实现 Adapter 后端接口来适配各种聊天平台。目前已经拥有基于 oicq 以及 Icalingua 自有协议的后端
     </p>
   </description>
   
