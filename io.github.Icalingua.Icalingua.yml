@@ -34,16 +34,15 @@ modules:
       - cp -a opt/Icalingua $FLATPAK_DEST/
       - cp -a usr/share $FLATPAK_DEST/
       - sed -i 's:chat;:Chat;:g' $FLATPAK_DEST/share/applications/*.desktop
-      - desktop-file-edit --set-key="Exec" --set-value="icalingua %U" 
-          $FLATPAK_DEST/share/applications/*.desktop
+      - desktop-file-edit --set-key="Exec" --set-value="icalingua %U" $FLATPAK_DEST/share/applications/*.desktop
       - install -Dm644 $FLATPAK_ID.appdata.xml -t /app/share/metainfo
       - install -Dm755 icalingua.sh /app/bin/icalingua
     sources:
       - type: file
         only-arches: [x86_64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua/Icalingua/releases/download/v2.4.5/icalingua_2.4.5_amd64.deb
-        sha256: 8f438decf4c69ee94b59052df2ceab889feb0e8965efd1108b93a3468ed3171d
+        url: https://github.com/Icalingua/Icalingua/releases/download/v2.4.6/icalingua_2.4.6_amd64.deb
+        sha256: c79eda3e3f40e76e99b8b024fb9354aa026a25cce289b349db4cf5a0b64d4148
         x-checker-data:
           type: json
           is-main-source: true
@@ -56,8 +55,8 @@ modules:
       - type: file
         only-arches: [aarch64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua/Icalingua/releases/download/v2.4.5/icalingua_2.4.5_arm64.deb
-        sha256: 5328ac609018871f8a3d42e8fc6f00915b99bf474d66b7d9a60b14f7b3267e0e
+        url: https://github.com/Icalingua/Icalingua/releases/download/v2.4.6/icalingua_2.4.6_arm64.deb
+        sha256: 5cca803b9785f859887682e993444c12975b8da2a12ff4c3b172ff647aa4e193
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Icalingua/Icalingua/releases/latest
