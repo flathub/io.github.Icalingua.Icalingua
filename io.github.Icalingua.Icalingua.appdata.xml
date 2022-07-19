@@ -2,8 +2,8 @@
 <component type="desktop-application">
   <id>io.github.Icalingua.Icalingua</id>
   
-  <name>Icalingua</name>
-  <name xml:lang="zh_CN">Icalingua</name>
+  <name>Icalingua++</name>
+  <name xml:lang="zh_CN">Icalingua++</name>
   <summary>A Linux client for QQ and more</summary>
   <summary xml:lang="zh_CN">一款linux平台的QQ客户端</summary>
   <developer_name>Clansty</developer_name>
@@ -11,7 +11,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0-only</project_license>
   
-  <url type="homepage">https://github.com/Icalingua/Icalingua</url>
+  <url type="homepage">https://github.com/Icalingua-plus-plus/Icalingua-plus-plus</url>
   
   <recommends>
     <control>pointing</control>
@@ -37,7 +37,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="2.4.5" date="2021-12-22"/>
+    <release version="2.6.6" date="2022-07-07"/>
   </releases>
   <content_rating type="oars-1.1"/>
 </component>
