@@ -33,16 +33,15 @@ modules:
       - tar xf data.*
       - cp -a opt/Icalingua++ $FLATPAK_DEST/
       - cp -a usr/share $FLATPAK_DEST/
-      - desktop-file-edit --set-key="Exec" --set-value="icalingua %U" 
-          $FLATPAK_DEST/share/applications/*.desktop
+      - desktop-file-edit --set-key="Exec" --set-value="icalingua %U" $FLATPAK_DEST/share/applications/*.desktop
       - install -Dm644 $FLATPAK_ID.appdata.xml -t /app/share/metainfo
       - install -Dm755 icalingua.sh /app/bin/icalingua
     sources:
       - type: file
         only-arches: [x86_64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.6.6/icalingua_2.6.6_amd64.deb
-        sha256: 9230e1f5d2ba49d3969ffd5e56426272dc8cdd4ea2bc8a1ccd6e26abf3f2cfaf
+        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.7.3/icalingua_2.7.3_amd64.deb
+        sha256: 87d67ac8a81e764309f19dfa005f1162b5b7ba08e2a1199ba8ec2739c95807d2
         x-checker-data:
           type: json
           is-main-source: true
