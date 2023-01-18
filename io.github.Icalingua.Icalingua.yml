@@ -40,8 +40,8 @@ modules:
       - type: file
         only-arches: [x86_64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.8.2/icalingua_2.8.2_amd64.deb
-        sha256: 031d02ae9520f2cd10692001264fb2b935ad6fb62461fe28a050a772e9bda16b
+        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.8.6/icalingua_2.8.6_amd64.deb
+        sha256: e00b4c30766d392c880b416463001790a13fcfdd7cabe6449dc747f777745a9e
         x-checker-data:
           type: json
           is-main-source: true
