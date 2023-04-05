@@ -36,6 +36,7 @@ modules:
       - desktop-file-edit --set-key="Exec" --set-value="icalingua %U" $FLATPAK_DEST/share/applications/*.desktop
       - install -Dm644 $FLATPAK_ID.appdata.xml -t /app/share/metainfo
       - install -Dm755 icalingua.sh /app/bin/icalingua
+      - install -Dm755 zypak-wrapper-mod.sh /app/bin/zypak-wrapper-mod.sh
     sources:
       - type: file
         only-arches: [x86_64]
@@ -71,7 +72,7 @@ modules:
         dest-filename: icalingua.sh
         commands:
           - export TMPDIR=$XDG_RUNTIME_DIR/app/$FLATPAK_ID
-          - zypak-wrapper.sh /app/Icalingua++/icalingua "$@"
+          - /app/bin/zypak-wrapper-mod.sh /app/Icalingua++/icalingua "$@"
       - type: script
         dest-filename: zypak-wrapper-mod.sh
         commands:
