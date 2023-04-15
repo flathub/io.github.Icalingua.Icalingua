@@ -41,8 +41,8 @@ modules:
       - type: file
         only-arches: [x86_64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.9.3/icalingua_2.9.3_amd64.deb
-        sha256: cd8c6071ed55ee4ec38a28e466c1902c1f818d1c0717319dcfc69e92f1476e0c
+        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.9.4/icalingua_2.9.4_amd64.deb
+        sha256: 58667310630bdd9f90c842f6e140f085b080c545a9186d2df092e40e300d18f9
         x-checker-data:
           type: json
           is-main-source: true
@@ -55,8 +55,8 @@ modules:
       - type: file
         only-arches: [aarch64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.9.3/icalingua_2.9.3_arm64.deb
-        sha256: 0ef843c673861d72e80dffea05959846e207e579cd724e56dd092fe994b5494e
+        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.9.4/icalingua_2.9.4_arm64.deb
+        sha256: b7cf74ee5b0de1120b48e7f0f086c0cfc6546a7ecefbcb27cb54752aa02b30cb
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Icalingua-plus-plus/Icalingua-plus-plus/releases/latest
@@ -76,17 +76,17 @@ modules:
       - type: script
         dest-filename: zypak-wrapper-mod.sh
         commands:
-          - #!/usr/bin/bash
-          - 'self_dir="$(dirname $(realpath $0))"'
-          - 'if [[ -d "$self_dir/build" ]]; then'
+          - 
+            #!/usr/bin/bash
+          - self_dir="$(dirname $(realpath $0))"
+          - if [[ -d "$self_dir/build" ]]; then
           - '  export ZYPAK_BIN="$self_dir/build"'
           - '  export ZYPAK_LIB="$self_dir/build"'
-          - 'else'
+          - else
           - '  export ZYPAK_BIN="$self_dir"'
           - '  export ZYPAK_LIB="$self_dir/../lib"'
-          - 'fi'
+          - fi
           - '# http://crbug.com/376567'
-          - 'exec > >(exec cat)'
-          - 'exec 2> >(exec cat >&2)'
-          - 'exec "$ZYPAK_BIN/zypak-helper" host "$@"'
-          
+          - exec > >(exec cat)
+          - exec 2> >(exec cat >&2)
+          - exec "$ZYPAK_BIN/zypak-helper" host "$@"
