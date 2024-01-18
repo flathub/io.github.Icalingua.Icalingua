@@ -10,15 +10,14 @@ rename-desktop-file: icalingua.desktop
 command: icalingua
 finish-args:
   - --share=ipc
-  - --socket=x11
   - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --device=dri
   - --share=network
   - --persist=.pki
   - --filesystem=xdg-documents:ro
   - --filesystem=xdg-download
-  - --filesystem=xdg-config/fontconfig:ro
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --talk-name=com.canonical.AppMenu.Registrar
