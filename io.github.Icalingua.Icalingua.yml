@@ -10,8 +10,7 @@ rename-desktop-file: icalingua.desktop
 command: icalingua
 finish-args:
   - --share=ipc
-  - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --socket=pulseaudio
   - --device=dri
   - --share=network
