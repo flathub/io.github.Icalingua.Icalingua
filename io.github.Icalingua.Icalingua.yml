@@ -37,8 +37,8 @@ modules:
       - type: file
         only-arches: [x86_64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.12.22/icalingua_2.12.22_amd64.deb
-        sha256: 3746a6b837bfe5341d9a08bca00917be90aacfdf16c8decade3627c5a98f70bd
+        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.12.23/icalingua_2.12.23_amd64.deb
+        sha256: f07635af92314509f1793a1695e3dc0ec41dfbe5ac01ea2181ed94d803c93f1f
         x-checker-data:
           type: json
           is-main-source: true
@@ -51,8 +51,8 @@ modules:
       - type: file
         only-arches: [aarch64]
         dest-filename: icalingua.deb
-        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.12.22/icalingua_2.12.22_arm64.deb
-        sha256: 77d2e69db00b8062280b4eb2762f2ae1060cef71008ad47a050ac925e1be9734
+        url: https://github.com/Icalingua-plus-plus/Icalingua-plus-plus/releases/download/v2.12.23/icalingua_2.12.23_arm64.deb
+        sha256: febeed7504259d6fe3f4c9859a746193133009d81cefb0c49aaf65b7d95acc82
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Icalingua-plus-plus/Icalingua-plus-plus/releases/latest
